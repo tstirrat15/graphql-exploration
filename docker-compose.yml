@@ -1,0 +1,24 @@
+version: '3.5'
+
+services:
+  app:
+    build:
+      context: .
+    tty: true
+    volumes:
+      - ./personal_shopper:/app
+    depends_on:
+      - postgres
+    ports:
+      - "80:80"
+      - "3000:3000"
+
+  postgres:
+    image: postgres:alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgres
+
+volumes:
+  postgres_data: {}
