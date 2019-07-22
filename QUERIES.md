@@ -1,4 +1,7 @@
-# Get a single client
+# Some toy queries
+Note: the IDs here likely won't work on your local - you'll have to get your own
+ID and substitute it in.
+## Get a single client
 ```graphql
 {
   client(id:"Q2xpZW50Tm9kZTox") {
@@ -7,7 +10,7 @@
 }
 ```
 
-# Get client's shopping list
+## Get client's shopping list
 ```graphql
 {
   client(id:"Q2xpZW50Tm9kZTox") {
@@ -27,7 +30,7 @@
 }
 ```
 
-# Get shopping list for source
+## Get shopping list for source
 ```graphql
 {
   source(id:"U291cmNlTm9kZTox") {

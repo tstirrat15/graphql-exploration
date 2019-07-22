@@ -1,6 +1,11 @@
 # graphql-exploration
 A toy project to look at how graphql and REST concepts differ.
 
+## Getting this running
+`docker-compose up` should give you most of it.
+
+You'll have to manually create a `personal_shopper` table in the postgres DB, though.
+
 ## Some notes on GraphQL
 
 ### Advantages
