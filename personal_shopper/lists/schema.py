@@ -9,18 +9,21 @@ class ItemNode(DjangoObjectType):
     class Meta:
         model = Item
         interfaces = (relay.Node, )
+        filter_fields = '__all__'
 
 
 class SourceNode(DjangoObjectType):
     class Meta:
         model = Source
         interfaces = (relay.Node, )
+        filter_fields = '__all__'
 
 
 class ClientNode(DjangoObjectType):
     class Meta:
         model = Client
         interfaces = (relay.Node, )
+        filter_fields = '__all__'
 
 
 class Query(ObjectType):
