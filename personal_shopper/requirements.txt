@@ -1,4 +1,5 @@
 django
+django-filter
 django-rest-framework
 graphene-django
 psycopg2
